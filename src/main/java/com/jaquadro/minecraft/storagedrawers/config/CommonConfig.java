@@ -118,6 +118,8 @@ public final class CommonConfig
         public final ForgeConfigSpec.ConfigValue<Integer> level3Mult;
         public final ForgeConfigSpec.ConfigValue<Integer> level4Mult;
         public final ForgeConfigSpec.ConfigValue<Integer> level5Mult;
+        public final ForgeConfigSpec.ConfigValue<Integer> level6Mult;
+        public final ForgeConfigSpec.ConfigValue<Integer> level7Mult;
 
         public Upgrades (ForgeConfigSpec.Builder builder) {
             builder.push("StorageUpgrades");
@@ -134,6 +136,10 @@ public final class CommonConfig
                 .define("level4Mult", 16);
             level5Mult = builder
                 .define("level5Mult", 32);
+            level6Mult = builder
+                .define("level6Mult", 64);
+            level7Mult = builder
+                .define("level7Mult", 128);
 
             builder.pop();
         }
@@ -148,6 +154,8 @@ public final class CommonConfig
                 case 3 -> level3Mult.get();
                 case 4 -> level4Mult.get();
                 case 5 -> level5Mult.get();
+                case 6 -> level6Mult.get();
+                case 7 -> level7Mult.get();
                 default -> 1;
             };
         }

@@ -26,11 +26,13 @@ public final class ModItems
     private static final ResourceKey<CreativeModeTab> MAIN = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(StorageDrawers.MOD_ID, "storagedrawers"));
 
     public static final RegistryObject<Item>
-        OBSIDIAN_STORAGE_UPGRADE = ITEM_REGISTER.register("obsidian_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.OBSIDIAN, new Item.Properties())),
         IRON_STORAGE_UPGRADE = ITEM_REGISTER.register("iron_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.IRON, new Item.Properties())),
         GOLD_STORAGE_UPGRADE = ITEM_REGISTER.register("gold_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.GOLD, new Item.Properties())),
+        OBSIDIAN_STORAGE_UPGRADE = ITEM_REGISTER.register("obsidian_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.OBSIDIAN, new Item.Properties())),
         DIAMOND_STORAGE_UPGRADE = ITEM_REGISTER.register("diamond_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.DIAMOND, new Item.Properties())),
         EMERALD_STORAGE_UPGRADE = ITEM_REGISTER.register("emerald_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.EMERALD, new Item.Properties())),
+        RUBY_STORAGE_UPGRADE = ITEM_REGISTER.register("ruby_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.RUBY, new Item.Properties())),
+        TANZANITE_STORAGE_UPGRADE = ITEM_REGISTER.register("tanzanite_storage_upgrade", () -> new ItemUpgradeStorage(EnumUpgradeStorage.TANZANITE, new Item.Properties())),
         ONE_STACK_UPGRADE = ITEM_REGISTER.register("one_stack_upgrade", () -> new ItemUpgrade(new Item.Properties())),
         VOID_UPGRADE = ITEM_REGISTER.register("void_upgrade", () -> new ItemUpgrade(new Item.Properties())),
         CREATIVE_STORAGE_UPGRADE = ITEM_REGISTER.register("creative_storage_upgrade", () -> new ItemUpgrade(new Item.Properties())),
